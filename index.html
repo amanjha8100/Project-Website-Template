@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CSS Website</title>
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="#" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Its okay</h1>
+                    <h1 class="large">I like it</h1>
+                </div>
+                <form>
+                    <div class="leftside-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="Username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="Password" type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <div class="rightside-col">
+                    <div class="videoContainer">
+                    <iframe width="350" height="210" src="https://www.youtube.com/embed/Gjwsr6J6ykw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    
+    <header>
+        <h1 class="section2Header">The Standards Of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+               <div class="box">
+                    <div class=icon>
+                        <img src="imgs/panda.jpg" width=110 height=110>
+                   </div>
+                   <label>I am Cute</label>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div> 
+            </div>
+            <div class="col-4">
+               <div class="box">
+                    <div class=icon>
+                        <img src="imgs/panda.jpg" width=110 height=110>
+                   </div>
+                   <label>Talk To Me</label>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div> 
+            </div>
+            <div class="col-4">
+               <div class="box">
+                    <div class=icon>
+                        <img src="imgs/panda.jpg" width=110 height=110>
+                   </div>
+                   <label>Adore Me</label>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnMore">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    
+    <div class="container">
+        <div class="row">
+        <div class="col-7">
+            <article>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            </article>
+        </div>
+        <div class="col-5">
+            <div class="nice">
+                <img src="imgs/cat.jpg" height=150>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobile">
+                <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Career</li>
+            </ul>
+            </div>
+            <div class="col-3 mobile">
+                <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="col-3 mobile">
+                <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="col-3 mobile">
+                <h1>Company</h1>
+            <ul>
+                <li>About</li>
+                <li>Blogs</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        </div>
+        
+    </footer>
+    <script>
+       function dropdownMenu()
+        {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
